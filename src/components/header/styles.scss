@@ -1,0 +1,51 @@
+.header{
+    height: 80px;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+    .search{
+        width: 300px;
+        margin-left: 16px;
+        input{
+            width: 100%;
+            border-radius: 16px;
+        }
+    }
+
+    .nav{
+        .nav-item{
+            margin: 0 16px;
+            padding: 8px 12px;
+            font-weight: 500;
+            border-radius: 4px;
+            transition: color 0.3s;
+            transition: background-color 0.3s;
+
+            i{
+                font-size: 1.2em;
+                color: var(--bs-primary)
+            }
+            span{
+                margin-left: 8px;
+            }
+
+            &:hover{
+                background-color: rgba($color: var(--code-primary), $alpha: 0.8);
+                cursor: pointer;
+                i{
+                    color: white;
+                }
+                span{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+a{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    &:hover{
+        color: inherit; /* blue colors for links too */
+        text-decoration: inherit; /* no underline */
+    }
+}

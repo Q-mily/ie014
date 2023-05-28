@@ -1,9 +1,8 @@
-import { Container, Row, Col, Figure } from 'react-bootstrap'
 import './styles.scss'
 const About = () =>{
     return(
     <>
-        <Container className="container">
+        {/* <Container className="container">
             <Row className='my-3'>
                 <Col>
                     <h1>Về chúng tôi - ThinkPro</h1>
@@ -52,7 +51,7 @@ const About = () =>{
                     <p>ThinkPro là hệ thống bán lẻ máy tính và phụ kiện uy tín tại Việt Nam với chuỗi cửa hàng trải nghiệm độc đáo và đội ngũ tư vấn chuyên sâu, hình thức thanh toán đa dạng và bảo hành uy tín, tin cậy giúp khách hàng tự tin lựa chọn các sản phẩm công nghệ phù hợp nhất.</p>
                 </Col>
             </Row>
-        </Container>
+        </Container> */}
     </>
     )
 }

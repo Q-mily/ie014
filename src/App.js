@@ -1,6 +1,8 @@
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MyProviders from './context';
 import { FullLayout} from "./layouts";
 import { Home, ProductDetail, ProductList, About, PageNotFound, Register } from "./pages";
 const router = createBrowserRouter([
@@ -42,7 +44,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-   <RouterProvider router={router} />
+    <MyProviders>
+         <RouterProvider router={router} />
+    </MyProviders>
   );
 }
 

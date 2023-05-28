@@ -1,0 +1,13 @@
+p,h1{
+    margin: 0;
+}
+.btn-add-cart{
+    font-weight: 500;
+    color: rgb(0, 101, 238);
+    background-color: rgba(0, 101, 238, 0.05);
+
+    &:hover{
+        color: rgb(0, 101, 238);
+        background-color: rgba(0, 101, 238 , 0.1);
+    }
+}

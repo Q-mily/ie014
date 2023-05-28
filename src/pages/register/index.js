@@ -1,12 +1,12 @@
 import './styles.scss';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+// import Col from 'react-bootstrap/Col';
+// import Row from 'react-bootstrap/Row';
+// import Button from 'react-bootstrap/Button';
+// import Form from 'react-bootstrap/Form';
 const Register = () =>{
     return(
     <>
-        <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+        {/* <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
         <Form>
         
             <Row className="mb-3">
@@ -51,7 +51,7 @@ const Register = () =>{
                     <a href="login.html">Đăng nhập</a>
                 </Col>
             </Row>
-        </Form>
+        </Form> */}
     </>)
 }
 export default Register;
