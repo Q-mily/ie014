@@ -18,16 +18,16 @@ const Footer = () =>{
 
                     <div className="col-12 mt-4">
                         <h3>Hệ thống cửa hàng</h3>
-                        <div className="row" style={{marginRight: 21, marginLeft:1}}>
-                            <div className="col alert alert-primary p-3" style={{fontSize:15}}>
+                        <div className="row" style={{marginRight: '21px', marginLeft: '1px'}}>
+                            <div className="col alert alert-primary p-3" style={{fontSize: '15px'}}>
                                 <p><strong>Số 5 - 7 Nguyễn Huy Tưởng, Phường 6, Quận Bình Thạnh, Hồ Chí Minh</strong></p>
                                 <p><a href="https://goo.gl/maps/3d8XF1wEscqqqnBb7">Chỉ đường</a></p>
                             </div>
-                            <div className="col alert alert-primary p-3" style={{fontSize:15, marginLeft:12}}>
+                            <div className="col alert alert-primary p-3" style={{fontSize: '15px', marginLeft: '12px'}}>
                                 <p><strong>95 Trần Thiện Chánh, F12, Q10, HCM</strong></p>
                                 <p><a href="https://goo.gl/maps/VWkTEToumtxVSWxp6">Chỉ đường</a></p>
                             </div>
-                            <div className="col alert alert-primary p-3" style={{fontSize:15, marginLeft:12}}>
+                            <div className="col alert alert-primary p-3" style={{fontSize: '15px', marginLeft: '12px'}}>
                                 <p><strong>53 Thái Hà, Trung Liệt, Đống Đa, Hà Nội</strong></p>
                                 <p><a href="https://goo.gl/maps/EsyMRcyhUAucZHBS9">Chỉ đường</a></p>
                             </div>
@@ -36,38 +36,38 @@ const Footer = () =>{
 
                     <div className="col-12 mt-3">
                         <h3>Đa dạng thanh toán</h3>
-                        <div className="row" style={{marginRight: 153, marginLeft:1}}>
-                            <div className="col alert alert-secondary p-3 d-flex justify-content-center" style={{fontSize:14}}>
+                        <div className="row" style={{marginRight: '153px', marginLeft: '1px'}}>
+                            <div className="col alert alert-secondary p-3 d-flex justify-content-center" style={{fontSize: '14px'}}>
                                 <div className="navi">
                                     <i className="bi bi-phone-fill"></i>
                                     <span>Chuyển khoản</span>
                                 </div>
                             </div> 
-                            <div className="col alert alert-secondary p-3 d-flex justify-content-center" style={{fontSize:14, marginLeft:12}}>
+                            <div className="col alert alert-secondary p-3 d-flex justify-content-center" style={{fontSize: '14px', marginLeft: '12px'}}>
                                 <div className="navi">
                                     <i className="bi bi-cash"></i>
                                     <span>Tiền mặt</span>
                                 </div>                           
                             </div> 
-                            <div className="col alert alert-secondary p-3 d-flex justify-content-center" style={{fontSize:14, marginLeft:12}}>
+                            <div className="col alert alert-secondary p-3 d-flex justify-content-center" style={{fontSize: '14px', marginLeft: '12px'}}>
                                 <div className="navi">
                                     <i className="bi bi-wallet-fill"></i>
                                     <span>Ví điện tử</span>
                                 </div>                           
                             </div> 
-                            <div className="col alert alert-secondary p-3 d-flex justify-content-center" style={{fontSize:14, marginLeft:12}}>
+                            <div className="col alert alert-secondary p-3 d-flex justify-content-center" style={{fontSize: '14px', marginLeft: '12px'}}>
                                 <div className="navi">
                                     <i className="bi bi-credit-card-fill"></i>
                                     <span>Thẻ ATM</span>
                                 </div>
                             </div> 
-                            <div className="col alert alert-secondary p-3 d-flex justify-content-center" style={{fontSize:14, marginLeft:12}}>
+                            <div className="col alert alert-secondary p-3 d-flex justify-content-center" style={{fontSize: '14px', marginLeft: '12px'}}>
                                 <div className="navi">
                                     <i className="bi bi-credit-card-2-back-fill"></i>
                                     <span>Thẻ Quốc tế</span>
                                 </div>
                             </div>
-                            <div className="col alert alert-secondary p-3 d-flex justify-content-center" style={{fontSize:14, marginLeft:12}}>
+                            <div className="col alert alert-secondary p-3 d-flex justify-content-center" style={{fontSize: '14px', marginLeft: '12px'}}>
                                 <div className="navi">
                                     <i className="bi bi-qr-code"></i>
                                     <span>Mã QR</span>
@@ -78,38 +78,38 @@ const Footer = () =>{
 
                     <div className="col-12 mt-3">
                         <h3>ThinkPro trên social networks</h3>
-                        <div className="row" style={{marginRight: 153, marginLeft:1}}>
-                            <div className="col alert alert-secondary  p-3 d-flex justify-content-center" style={{fontSize:14}}>
+                        <div className="row" style={{marginRight: '153px', marginLeft: '1px'}}>
+                            <div className="col alert alert-secondary  p-3 d-flex justify-content-center" style={{fontSize: '14px'}}>
                                 <div className="navi">
                                     <i className="bi bi-facebook"></i>
                                     <span>Facebook</span>
                                 </div>
                             </div> 
-                            <div className="col alert alert-secondary  p-3 d-flex justify-content-center" style={{fontSize:14, marginLeft:12}}>
+                            <div className="col alert alert-secondary  p-3 d-flex justify-content-center" style={{fontSize: '14px', marginLeft: '12px'}}>
                                 <div className="navi">
                                     <i className="bi bi-youtube"></i>
                                     <span>Youtube</span>
                                 </div>                            
                             </div> 
-                            <div className="col alert alert-secondary  p-3 d-flex justify-content-center" style={{fontSize:14, marginLeft:12}}>
+                            <div className="col alert alert-secondary  p-3 d-flex justify-content-center" style={{fontSize:'14px', marginLeft: '12px'}}>
                                 <div className="navi">
                                     <i className="bi bi-tiktok"></i>
                                     <span>Tiktok</span>
                                 </div>
                             </div> 
-                            <div className="col alert alert-secondary  p-3 d-flex justify-content-center" style={{fontSize:14, marginLeft:12}}>
+                            <div className="col alert alert-secondary  p-3 d-flex justify-content-center" style={{fontSize:'14px', marginLeft: '12px'}}>
                                 <div className="navi">    
                                     <i className="bi bi-telegram"></i>
                                     <span>Telegram</span>
                                 </div>
                             </div>
-                            <div className="col alert alert-secondary  p-3 d-flex justify-content-center invisible" style={{fontSize:14, marginLeft:12}}>
+                            <div className="col alert alert-secondary  p-3 d-flex justify-content-center invisible" style={{fontSize: '14px', marginLeft: '12px'}}>
                                 <div className="navi">    
                                     <i className="bi bi-telegram"></i>
                                     <span>...</span>
                                 </div>
                             </div>
-                            <div className="col alert alert-secondary  p-3 d-flex justify-content-center invisible" style={{fontSize:14, marginLeft:12}}>
+                            <div className="col alert alert-secondary  p-3 d-flex justify-content-center invisible" style={{fontSize: '14px', marginLeft: '12px'}}>
                                 <div className="navi">    
                                     <i className="bi bi-telegram"></i>
                                     <span>...</span>
