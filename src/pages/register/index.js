@@ -1,57 +1,37 @@
 import './styles.scss';
-// import Col from 'react-bootstrap/Col';
-// import Row from 'react-bootstrap/Row';
-// import Button from 'react-bootstrap/Button';
-// import Form from 'react-bootstrap/Form';
+
 const Register = () =>{
     return(
     <>
-        {/* <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
-        <Form>
-        
-            <Row className="mb-3">
-            <p>Nếu chưa có tài khoản vui lòng đăng ký tại đây!</p>
-            </Row>
-
-            <Row className="mb-2">
-                <Col sm={5} className="my-1">
-                    <Form.Group controlId="formBasicFirstName">
-                        <Form.Label>Họ*</Form.Label>
-                        <Form.Control type="text" placeholder="Hãy nhập họ"/>
-                    </Form.Group>
-                </Col>
-                <Col sm={5} className="my-1">
-                    <Form.Group as={Col} controlId="formBasicLastName">
-                        <Form.Label>Tên*</Form.Label>
-                        <Form.Control type="text" placeholder="Hãy nhập tên"/>
-                    </Form.Group>
-                </Col>
-            </Row>
-
-            <Row className="mb-2">
-                <Col sm={5} className="my-1">
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Email*</Form.Label>
-                        <Form.Control type="email" placeholder="Hãy nhập email"/>
-                    </Form.Group>
-                </Col>
-                <Col sm={5} className="my-1">
-                    <Form.Group controlId="formBasicPassword">
-                        <Form.Label>Mật khẩu*</Form.Label>
-                        <Form.Control type="password" placeholder="Hãy nhập mật khẩu"/>
-                    </Form.Group>
-                </Col>
-            </Row>
-
-            <Row className="mt-5">
-                <Col>
-                    <Button variant="primary" type="submit">Đăng ký</Button>
-                </Col>
-                <Col xs={11} className="my-2">
-                    <a href="login.html">Đăng nhập</a>
-                </Col>
-            </Row>
-        </Form> */}
+        <div className="container">
+            <div className="bg-body rounded p-3">
+                <h1>ĐĂNG KÝ TÀI KHOẢN</h1>
+                <div className="my-4">
+                    <p>Nếu chưa có tài khoản vui lòng đăng ký tại đây!</p>
+                </div>
+                <form className="row">
+                    <div className="col-md-6">
+                        <label for="inputFirstname" className="form-label">Họ</label>
+                        <input type="text" className="form-control" id="inputFirstname" required></input>
+                    </div>
+                    <div className="col-md-6">
+                        <label for="inputLastname" className="form-label">Tên</label>
+                        <input type="text" className="form-control" id="inputLastName" required></input>
+                    </div>
+                    <div className="col-md-6">
+                        <label for="inputEmail" className="form-label">Email</label>
+                        <input type="email" className="form-control" id="inputEmail" required></input>
+                    </div>
+                    <div className="col-md-6">
+                        <label for="inputPassword" className="form-label">Mật khẩu</label>
+                        <input type="password" className="form-control" id="inputPassword" required></input>
+                    </div>
+                    <div className="col-12 mt-4">
+                        <button class="btn btn-success" type="submit">Đăng ký</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </>)
 }
 export default Register;

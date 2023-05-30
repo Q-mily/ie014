@@ -1,0 +1,20 @@
+footer{
+    .navi{
+        font-weight: 400;
+        border-radius: 4px;
+        transition: color 0.3s;
+        transition: background-color 0.3s;
+    }
+    /*p{
+        padding-top: 2px;
+    }*/
+    i{
+        font-size: 1.2em;
+        color: var(--bs-primary)
+    }
+    span{
+        margin-left: 4px;
+        font-weight: bolder;
+    }
+
+}
