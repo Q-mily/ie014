@@ -6,7 +6,7 @@ const Footer = () =>{
             <div className="container d-flex align-items-center">
                 <div className="row">
                     <div className="col-12 mt-4">
-                        <img src="./logo-thinkpro.svg" alt="logo" style={{height: '30px'}}/>
+                        <img src="/logo-thinkpro.svg" alt="logo" style={{height: '30px'}}/>
                     </div>
                     <div className="col-12 mt-4">
                         <h3>Cần hỗ trợ thêm?</h3>
@@ -21,15 +21,15 @@ const Footer = () =>{
                         <div className="row" style={{marginRight: '21px', marginLeft: '1px'}}>
                             <div className="col alert alert-primary p-3" style={{fontSize: '15px'}}>
                                 <p><strong>Số 5 - 7 Nguyễn Huy Tưởng, Phường 6, Quận Bình Thạnh, Hồ Chí Minh</strong></p>
-                                <p><a href="https://goo.gl/maps/3d8XF1wEscqqqnBb7">Chỉ đường</a></p>
+                                <p><a href="https://goo.gl/maps/3d8XF1wEscqqqnBb7" target="_blank">Chỉ đường</a></p>
                             </div>
                             <div className="col alert alert-primary p-3" style={{fontSize: '15px', marginLeft: '12px'}}>
                                 <p><strong>95 Trần Thiện Chánh, F12, Q10, HCM</strong></p>
-                                <p><a href="https://goo.gl/maps/VWkTEToumtxVSWxp6">Chỉ đường</a></p>
+                                <p><a href="https://goo.gl/maps/VWkTEToumtxVSWxp6" target="_blank">Chỉ đường</a></p>
                             </div>
                             <div className="col alert alert-primary p-3" style={{fontSize: '15px', marginLeft: '12px'}}>
                                 <p><strong>53 Thái Hà, Trung Liệt, Đống Đa, Hà Nội</strong></p>
-                                <p><a href="https://goo.gl/maps/EsyMRcyhUAucZHBS9">Chỉ đường</a></p>
+                                <p><a href="https://goo.gl/maps/EsyMRcyhUAucZHBS9" target="_blank">Chỉ đường</a></p>
                             </div>
                         </div>
                     </div>

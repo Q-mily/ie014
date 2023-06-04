@@ -1,6 +1,62 @@
+import { useFormik } from 'formik';
 import './styles.scss';
+import Swal from 'sweetalert2';
+import http from '../../utils/request';
+import { useNavigate } from "react-router-dom";
 
 const Register = () =>{
+    const navigate = useNavigate();
+    const formik = useFormik({
+        initialValues: {
+            name: '',
+            username: '',
+            password: '',
+            passwordConfirm: ''
+        },
+        onSubmit: (values) =>{
+            if (
+                values.name === "" ||
+                values.username === "" ||
+                values.password === "" ||
+                values.passwordConfirm === ""
+            ){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Bạn chưa điền đủ thông tin!',
+                  })
+                return;
+            }
+            if (values.password !== values.passwordConfirm){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Mật khẩu không trùng khớp!',
+                  })
+                return;
+            }
+
+            http.post(
+                '/auth/register',
+                JSON.stringify(values),
+                {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }
+            ).then((res) => {
+                console.log(res);
+                if (res.statusCode === 201){
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Đăng ký thành công!',
+                        text: ''
+                      })
+                    navigate('/home');
+                }
+            })
+        }
+    })
     return(
     <>
         <div className="container">
@@ -11,23 +67,36 @@ const Register = () =>{
                 </div>
                 <form className="row">
                     <div className="col-md-6">
-                        <label for="inputFirstname" className="form-label">Họ</label>
-                        <input type="text" className="form-control" id="inputFirstname" required></input>
+                        <label forhtml="name" className="form-label">Họ tên</label>
+                        <input type="text" className="form-control" id="name" required
+                            value={formik.values.name}
+                            onChange={formik.handleChange}
+                        ></input>
                     </div>
                     <div className="col-md-6">
-                        <label for="inputLastname" className="form-label">Tên</label>
-                        <input type="text" className="form-control" id="inputLastName" required></input>
+                        <label forhtml="username" className="form-label">Tài khoản</label>
+                        <input type="text" className="form-control" id="username" required
+                            value={formik.values.username}
+                            onChange={formik.handleChange}
+                        ></input>
                     </div>
                     <div className="col-md-6">
-                        <label for="inputEmail" className="form-label">Email</label>
-                        <input type="email" className="form-control" id="inputEmail" required></input>
+                        <label forhtml="password" className="form-label">Mật khẩu</label>
+                        <input type="password" className="form-control" id="password" required
+                            value={formik.values.password}
+                            onChange={formik.handleChange}
+                        ></input>
                     </div>
                     <div className="col-md-6">
-                        <label for="inputPassword" className="form-label">Mật khẩu</label>
-                        <input type="password" className="form-control" id="inputPassword" required></input>
+                        <label forhtml="passwordConfirm" className="form-label">Nhập lại mật khẩu</label>
+                        <input type="password" className="form-control" id="passwordConfirm" required
+                            value={formik.values.passwordConfirm}
+                            onChange={formik.handleChange}
+                        ></input>
                     </div>
                     <div className="col-12 mt-4">
-                        <button class="btn btn-success" type="submit">Đăng ký</button>
+                        
+                        <button className="btn" type="none"  style={{ backgroundColor: "var(--bs-primary)", color: "white" }} onClick={formik.handleSubmit}>Đăng ký</button>
                     </div>
                 </form>
             </div>

@@ -12,17 +12,6 @@
             "__v": 0
         },
         {
-            "_id": "646a4550d84afb72dd203f84",
-            "id": 3,
-            "description": "PC là thuật ngữ tiếng Anh, viết tắt là \"Personal Computer\" có nghĩa là máy tính cá nhân, là một chiếc máy tính có thể đặt vừa trên một chiếc bàn để người bình thường sử dụng, trái ngược với máy chủ hoặc siêu máy tính. PC hoàn toàn có thể là máy vi tính, m",
-            "icon": "media/core/categories/2021/12/29/Rectangle 1461-1.png",
-            "name": "PC",
-            "sharedUrl": "pc",
-            "slug": "pc",
-            "thumbnail": "media/core/categories/2023/3/17/thumb-pc.png",
-            "__v": 0
-        },
-        {
             "_id": "646a4550d84afb72dd203f85",
             "id": 7,
             "description": "Bàn phím là một thiết bị đầu vào cho máy tính, được sử dụng để nhập dữ liệu và điều khiển các chức năng của máy tính. Bàn phím bao gồm một loạt các phím nhấn, các phím chữ, số, các ký tự đặc biệt và các phím chức năng để thực hiện các tác vụ.",
@@ -45,17 +34,6 @@
             "__v": 0
         },
         {
-            "_id": "646a4550d84afb72dd203f87",
-            "id": 9,
-            "description": "Balo là sản phẩm thường được sử dụng để miêu tả một loại túi đeo vai hai quai, được sử dụng để đựng đồ khi đi học, đi du lịch hoặc đi làm.\nTúi xách là sản phẩm thường được sử dụng để đựng laptop, giúp người dùng có thể dễ dàng mang vác và bảo vệ máy trong",
-            "icon": "media/core/categories/2022/1/14/balo-tui.png",
-            "name": "Balo, Túi",
-            "sharedUrl": "balo-tui",
-            "slug": "balo-tui",
-            "thumbnail": "media/core/categories/2023/3/17/thumb-balo-tui.png",
-            "__v": 0
-        },
-        {
             "_id": "646a4550d84afb72dd203f88",
             "id": 11,
             "description": "Cổng chuyển (hay còn gọi là cổng kết nối) là một cổng truyền thông được sử dụng để chuyển đổi tín hiệu từ một loại giao diện sang một loại giao diện khác. Các cổng chuyển thường được sử dụng trong các thiết bị điện tử như máy tính, laptop, máy chiếu và cá",
@@ -64,17 +42,6 @@
             "sharedUrl": "cong-chuyen",
             "slug": "cong-chuyen",
             "thumbnail": "media/core/categories/2023/3/17/thumb-cong-chuyen.png",
-            "__v": 0
-        },
-        {
-            "_id": "646a4550d84afb72dd203f89",
-            "id": 12,
-            "description": "Đế tản nhiệt là thành phần linh kiện điều hòa luồng gió, đưa nhiệt lượng thoát ra khỏi hộp máy nhanh hơn nhằm hạ nhiệt máy nhanh và cân bằng nhiệt độ hộp máy khi vận hành. Từ đó giúp cho máy hoạt động tốt hơn, nâng cao tính bền bỉ của hiệu năng và linh ki",
-            "icon": "media/core/categories/2021/12/29/Rectangle 1461-13.png",
-            "name": "Đế tản nhiệt",
-            "sharedUrl": "tan-nhiet",
-            "slug": "tan-nhiet",
-            "thumbnail": "media/core/categories/2023/3/17/thumb-de-tan-nhiet.png",
             "__v": 0
         },
         {
@@ -122,28 +89,6 @@
             "__v": 0
         },
         {
-            "_id": "646a4550d84afb72dd203f90",
-            "id": 25,
-            "description": "Case máy tính hay còn được biết đến là thùng hoặc vỏ máy tính bộ phận bên ngoài máy, khác với CPU, RAM hoặc card đồ họa - những bộ phận được lắp đặt bên trong. Tiêu chí được quan tâm nhất của case máy tính là đảm bảo sự chắc chắn để có thể chịu được những",
-            "icon": "media/core/categories/2022/3/22/Case-may-tinh-thinkpro.png",
-            "name": "Case máy tính",
-            "sharedUrl": "case-may-tinh",
-            "slug": "case-may-tinh",
-            "thumbnail": "media/core/categories/2023/3/17/thumb-case-may-tinh.png",
-            "__v": 0
-        },
-        {
-            "_id": "646a4550d84afb72dd203f91",
-            "id": 26,
-            "description": "Ổ cứng là một thiết bị lưu trữ dữ liệu trong máy tính hoặc thiết bị di động. Nó có khả năng lưu trữ các tập tin, ứng dụng và hệ điều hành của hệ thống. Ổ cứng có thể được chia thành các phân vùng khác nhau để quản lý dữ liệu hiệu quả hơn.",
-            "icon": "media/core/categories/2021/12/29/Rectangle 1461-11.png",
-            "name": "Ổ cứng",
-            "sharedUrl": "o-cung",
-            "slug": "o-cung",
-            "thumbnail": "media/core/categories/2023/3/17/thumb-o-cung.png",
-            "__v": 0
-        },
-        {
             "_id": "646a4550d84afb72dd203f92",
             "id": 27,
             "description": "Âm thanh hay loa là một thiết bị điện tử được sử dụng để phát ra âm thanh. Nó bao gồm các thành phần khác như màng lọc tần số, bộ khuếch đại, điều khiển âm lượng,.. Loa có thể kết nối được với các thiết bị phát âm thanh thông qua dây cáp hoặc kết nối khôn",
@@ -174,50 +119,6 @@
             "sharedUrl": "phu-kien-va-setup",
             "slug": "phu-kien-va-setup",
             "thumbnail": "media/core/categories/2023/3/30/phu-kien-va-setup-thinkpro-2.png",
-            "__v": 0
-        },
-        {
-            "_id": "646a4550d84afb72dd203f95",
-            "id": 34,
-            "description": "Mặt bàn",
-            "icon": "media/core/categories/2023/3/18/logo-mat-ban-thinkpro-02.png",
-            "name": "Mặt bàn",
-            "sharedUrl": "mat-ban",
-            "slug": "mat-ban",
-            "thumbnail": "media/core/categories/2022/1/15/Bàn nâng hạ PC.png",
-            "__v": 0
-        },
-        {
-            "_id": "646a4550d84afb72dd203f96",
-            "id": 35,
-            "description": "Chân bàn",
-            "icon": "media/core/categories/2021/12/29/Rectangle 1461 copy.png",
-            "name": "Chân bàn",
-            "sharedUrl": "chan-ban",
-            "slug": "chan-ban",
-            "thumbnail": "media/core/categories/2022/1/15/Bàn nâng hạ PC.png",
-            "__v": 0
-        },
-        {
-            "_id": "646a4550d84afb72dd203f97",
-            "id": 39,
-            "description": "Tủ",
-            "icon": "media/core/categories/2022/12/14/AQUA_05.png",
-            "name": "Tủ",
-            "sharedUrl": "tu",
-            "slug": "tu",
-            "thumbnail": "media/core/categories/2021/12/29/Rectangle 1461 copy.png",
-            "__v": 0
-        },
-        {
-            "_id": "646a4550d84afb72dd203f8f",
-            "id": 24,
-            "description": "RAM (Random Access Memory) là bộ nhớ tạm của máy giúp lưu trữ thông tin hiện hành để CPU có thể truy xuất và xử lý. RAM không thể lưu trữ được dữ liệu khi mất nguồn điện cung cấp. Nếu như thiết bị bị mất nguồn, tắt máy thì dữ liệu trên RAM sẽ bị xóa.",
-            "icon": "media/core/categories/2021/12/29/Rectangle 1461-12.png",
-            "name": "RAM",
-            "sharedUrl": "ram",
-            "slug": "ram",
-            "thumbnail": "media/core/categories/2023/3/17/thumb-RAM.png",
             "__v": 0
         },
         {

@@ -11,3 +11,38 @@ p,h1{
         background-color: rgba(0, 101, 238 , 0.1);
     }
 }
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.img-selected{
+    border: 1px solid rgb(0, 101, 238);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.section-article{
+  padding: 0px 16px;
+  p{
+    text-indent: 1.5em;
+  }
+}

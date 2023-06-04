@@ -2,12 +2,16 @@ import './styles.scss';
 import {Link} from "react-router-dom";
 import { useContext } from 'react';
 import { CategoryContext } from '../../context/category-context';
+import Auth from "../auth";
+
 const Header = () =>{
     const [categories] = useContext(CategoryContext);
     return(
         <header className='header'>
             <div className="container d-flex align-items-center h-100">
-                <img src="./logo-thinkpro.svg" alt="logo" style={{height: '40px'}}/>
+                <Link to="/home">
+                    <img src="/logo-thinkpro.svg" alt="logo" style={{height: '40px'}}/>
+                </Link>
                 <div className="search">
                     <input className="form-control" type="text" placeholder='Tên sản phẩm, nhu cầu, hàng' />
                 </div>
@@ -23,13 +27,20 @@ const Header = () =>{
                             <i className="bi bi-list"></i>
                             <span>Danh mục</span>
                         </div>
-                        <ul className="dropdown-menu">
+                        <div className="dropdown-menu dropdown-menu-custom box-shadow-custom" style={{width: '900px'}}>
+                            <div className="row p-2 g-3">
                             {
                                 categories.map((cate) => (
-                                    <li key={cate.slug}><Link to="/products?cate_slug=laptop" className="dropdown-item">{cate.name}</Link></li>
+                                    <div key={cate.slug} className="col-3">
+                                        <Link to={`/products?cate_slug=${cate.slug}`} className="dropdown-item">
+                                            <img className="img-size-50"src={`https://images.thinkgroup.vn/unsafe/212x212/https://media-api-beta.thinkpro.vn/${cate.icon}`} alt={cate.icon} />
+                                            <span>{cate.name}</span>
+                                        </Link>
+                                    </div>
                                 ))
                             }
-                        </ul>
+                            </div>
+                        </div>
                     </div>
                     <Link to={"/about"}>
                         <div className="nav-item">
@@ -39,11 +50,7 @@ const Header = () =>{
                     </Link>
                 </nav>
                 <div className="spacer"></div>
-                <Link to={'/register'}>
-                    <div className="nav-item">
-                        <span>Đăng ký</span>
-                    </div>
-                </Link>
+                <Auth />
             </div>
         </header>
     )

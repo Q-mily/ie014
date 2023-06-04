@@ -8,8 +8,6 @@ const FullLayout = () =>{
     const [categories, dispatch] = useContext(CategoryContext);
     useEffect(() =>{
         dispatch.setCategories(getCategories().data);
-        console.log('laout');
-        console.log(categories);
     }, []);
     return (
     <>
