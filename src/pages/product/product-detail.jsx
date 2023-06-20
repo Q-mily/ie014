@@ -4,12 +4,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import http from "../../utils/request";
 import Counter from "./counter";
+import Swal from 'sweetalert2';
 const ProductDetail = (props) => {
   const { id } = useParams();
   const [product, setProduct] = useState({
@@ -35,7 +35,8 @@ const ProductDetail = (props) => {
         groupName: '',
         items: []
       }
-    ]
+    ],
+    variations:[]
   });
   const [imageSelected, setImageSelected] = useState(null);
   useEffect(() => {
@@ -43,7 +44,20 @@ const ProductDetail = (props) => {
       setProduct(res.data);
       setImageSelected(res.data.assets[0].src);
     });
-  }, []);
+  }, [id]);
+  
+  const handlePreviewImage = (url) => {
+    Swal.fire({
+      width: '1200px',
+      showCloseButton: true,
+      showConfirmButton: false,
+      html: `
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="${url}" class="img-swal w-75 h-75">
+        <div>
+      `,
+    })
+  }
   return (
     <>
       <div className="container mt-3">
@@ -53,6 +67,7 @@ const ProductDetail = (props) => {
               <div className="card-body">
                 <div className="" style={{ width: "50vw", height: "60vh" }}>
                   <img
+                    class="hover-c"
                     src={`https://media-api-beta.thinkpro.vn/${imageSelected}`}
                     alt=""
                     style={{
@@ -60,6 +75,7 @@ const ProductDetail = (props) => {
                       height: "100%",
                       objectFit: "contain",
                     }}
+                    onClick={() => handlePreviewImage(`https://media-api-beta.thinkpro.vn/${imageSelected}`)}
                   />
                 </div>
                 <hr />
@@ -80,7 +96,7 @@ const ProductDetail = (props) => {
                     >
                       <div
                         className={
-                          image.src == imageSelected ? "img-selected" : ""
+                          image.src === imageSelected ? "img-selected  hover-c" : "hover-c"
                         }
                       >
                         <img
@@ -102,8 +118,26 @@ const ProductDetail = (props) => {
                   <strong>{product.model.name}</strong>
                 </p>
                 <hr />
-                <div className="counter">
-                  <p>Số lượng: </p>
+                <div className="variable" style={{fontSize: '14px'}}>
+                  {
+                    product.variations.map((item) => (
+                      <div className="mt-3" key={item.name}>
+                        <h3 style={{fontSize: '16px', opacity: 0.9}}>{item.label}</h3>
+                        <div className="d-flex flex-wrap gx-3 gy-3" style={{margin: 0}}>
+                          {
+                            item.options.map((option) => (
+                              <div className="alert alert-secondary bg-white text-center m-1 px-3 py-1" key={option.name}>
+                                {option.name}
+                              </div>
+                            ))
+                          }
+                        </div>
+                      </div>
+                    ))
+                  }
+                </div>
+                <div className="counter mt-3">
+                  <h3 style={{fontSize: '16px', opacity: 0.9}}>Số lượng</h3>
                   <div className="d-flex">
                     <Counter />
                   </div>
@@ -148,7 +182,7 @@ const ProductDetail = (props) => {
                     </p>
                     {
                       attribute.items.map(item => (
-                        <p>
+                        <p key={item.label}>
                           <span>{item.label}</span> : <span> {item.value}</span>
                         </p>
                       )) 

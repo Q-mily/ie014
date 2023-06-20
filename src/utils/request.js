@@ -2,12 +2,16 @@ import axios from "axios";
 import Swal from "sweetalert2";
 
 const http = axios.create({
-    baseURL: process.env.REACT_APP_BE_URL ? process.env.REACT_APP_BE_URL : 'http://localhost:3000',
+    baseURL: process.env.NODE_ENV === 'production' ? process.env.REACT_APP_BE_URL : 'http://localhost:3000',
     timeout: 5000
 })
 
 http.interceptors.request.use(
     function (config){
+        config.headers = {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        };
         return config;
     },
     function (error){
@@ -20,6 +24,7 @@ http.interceptors.response.use(
         return response.data;
     },
     function (error){
+        console.log(error);
         Swal.fire({
             icon: 'error',
             title: 'Oops...',

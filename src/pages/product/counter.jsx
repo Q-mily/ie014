@@ -30,11 +30,11 @@ const Counter = () =>{
                     width: '4em',
                     height: '2.5em',
                     border: 'none',
-                    textAlign: 'center',
-                    border: 'none',
+                    textAlign: 'center'
                 }} 
                 type="number" 
                 value={count}
+                onChange={(event)=> {}}
             />
             <button 
                 style={{
@@ -48,7 +48,7 @@ const Counter = () =>{
                 onClick={() => setCount(count + 1)}
                 disabled={ count >= 10 }
             >
-                <i class="bi bi-plus"></i>
+                <i className="bi bi-plus"></i>
             </button>
         </div>
     )

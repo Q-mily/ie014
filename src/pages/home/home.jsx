@@ -423,7 +423,7 @@ const Home = () =>{
             <div className="row">
                 <div className="col-4 para">
                     <h1 style={{color: "white"}}>Giao diện mới, phục vụ bạn và người thân tốt hơn 💚💚💚</h1>
-                    <p>Sau 6 tháng cải tiến, ThinkPro chính thức ra mắt phiên bản Website mới. Đội ngũ ThinkPro luôn tự hào với sứ mệnh trở thành thương hiệu bán lẻ Laptop và đồ công nghệ tốt cho bạn và người thân!</p>
+                    <p style={{color: 'white'}}>Sau 6 tháng cải tiến, ThinkPro chính thức ra mắt phiên bản Website mới. Đội ngũ ThinkPro luôn tự hào với sứ mệnh trở thành thương hiệu bán lẻ Laptop và đồ công nghệ tốt cho bạn và người thân!</p>
                 </div>
                 <div className="col-8 img">
                     <img src="./section-banner.webp" alt="section-banner" style={{width: "100%", height: "100%"}}/>
@@ -464,7 +464,7 @@ const Home = () =>{
             <div className="row g-3 mt-2">
                 {
                     items.map(item => (
-                        <div className="col-2" key={item.slug}>                  
+                        <div className="col-xl-2 col-lg-3" key={item.slug}>                  
                             <Link className="card w-100 h-100 product-item" to={`/products/${item.skuId}`} key={`${item.slug}`}>
                                 <div className="card-img-top" style={{overflow: 'hidden'}}>
                                     <img src={`https://images.thinkgroup.vn/unsafe/212x212/https://media-api-beta.thinkpro.vn/${item.image}`} alt={item.image} />
